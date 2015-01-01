@@ -1,0 +1,197 @@
+id,name,spouse,child,gender,father,mother,born,died,birth_place,place_of_death,position_held,instance_of,occupation,description,enwiki,url
+Q70899,Adam,Q830183,"[u'Q205365', u'Q313421', u'Q107626']",male,,,,,,,,biblical character,,,Adam,https://www.wikidata.org/wiki/Q70899
+Q830183,Eve,Q70899,"[u'Q205365', u'Q313421', u'Q107626']",female,,,,,,,,biblical character,,,Eve,https://www.wikidata.org/wiki/Q830183
+Q205365,Cain,,Q2495184,male,Q70899,Q830183,,,,,,human,,,,https://www.wikidata.org/wiki/Q205365
+Q313421,Abel,,,male,Q70899,Q830183,,,,,,biblical character,,,,https://www.wikidata.org/wiki/Q313421
+Q107626,Seth,,Q682531,male,Q70899,Q830183,,,,,,biblical character,,,Seth,https://www.wikidata.org/wiki/Q107626
+Q2495184,Enoch,,Q3364264,male,Q205365,,,,,,,biblical character,,,Enoch (son of Cain),https://www.wikidata.org/wiki/Q2495184
+Q682531,Enos,,Q844433,male,Q107626,,,,,,,human,,,Enos (biblical figure),https://www.wikidata.org/wiki/Q682531
+Q3364264,Irad,,Q10329365,male,Q2495184,,,,,,,biblical character,,,"Irad, Son of Enoch",https://www.wikidata.org/wiki/Q3364264
+Q844433,Kenan,,Q10297002,male,Q682531,,,,,,,"[u'human', u'biblical character']",,,Kenan,https://www.wikidata.org/wiki/Q844433
+Q10329365,Mehujael,,Q10329289,male,Q3364264,,,,,,,biblical character,,,,https://www.wikidata.org/wiki/Q10329365
+Q10297002,Mahalalel,,Q927410,male,Q844433,,,,,,,human,,,Mahalalel,https://www.wikidata.org/wiki/Q10297002
+Q10329289,Methusael,,Q155852,male,Q10329365,,,,,,,biblical character,,,,https://www.wikidata.org/wiki/Q10329289
+Q927410,Jared,,Q213027,male,Q10297002,,,,,,,human,,,Jared (biblical figure),https://www.wikidata.org/wiki/Q927410
+Q155852,Lamech,"[u'Q1809123', u'Q203082']","[u'Q1356181', u'Q1542154', u'Q1676803', u'Q1432204']",male,Q10329289,,,,,,,biblical character,,,Lamech,https://www.wikidata.org/wiki/Q155852
+Q213027,Enoch,,Q156290,male,Q927410,,,,,,,human,,,Enoch (ancestor of Noah),https://www.wikidata.org/wiki/Q213027
+Q1809123,Ada,Q155852,"[u'Q1676803', u'Q1432204']",female,,,,,,,,biblical character,,,,https://www.wikidata.org/wiki/Q1809123
+Q203082,Zillah,Q155852,"[u'Q1356181', u'Q1542154']",female,,,,,,,,biblical character,,,,https://www.wikidata.org/wiki/Q203082
+Q1356181,Tubal-cain,,,male,Q155852,Q203082,,,,,,biblical character,,,Tubal-cain,https://www.wikidata.org/wiki/Q1356181
+Q1542154,Naamah,,,female,Q155852,Q203082,,,,,,biblical character,,,Naamah (Genesis),https://www.wikidata.org/wiki/Q1542154
+Q1676803,Jabal,,,male,Q155852,Q1809123,,,,,,biblical character,,,Jabal (Bible),https://www.wikidata.org/wiki/Q1676803
+Q1432204,Jubal,,,male,Q155852,Q1809123,,,,,,biblical character,,,Jubal (Bible),https://www.wikidata.org/wiki/Q1432204
+Q156290,Methuselah,,Q10921342,male,Q213027,,,,,,,human,,,Methuselah,https://www.wikidata.org/wiki/Q156290
+Q10921342,Lamech,,Q81422,male,Q156290,,,,,,,human,,,Lamech (father of Noah),https://www.wikidata.org/wiki/Q10921342
+Q81422,Noah,,"[u'Q200902', u'Q229702', u'Q200637']",male,Q10921342,,,,,,,biblical character,,,Noah,https://www.wikidata.org/wiki/Q81422
+Q200902,Shem,,"[u'Q1147704', u'Q2426606', u'Q457520', u'Q1815870', u'Q625667']",male,Q81422,,,,,,,biblical character,,,Shem,https://www.wikidata.org/wiki/Q200902
+Q229702,Ham,,"[u'Q1138595', u'Q204797', u'Q1369215', u'Q946939']",male,Q81422,,,,,,,human,,,Ham (son of Noah),https://www.wikidata.org/wiki/Q229702
+Q200637,Japheth,,"[u'Q1148172', u'Q1964706', u'Q1790796', u'Q1684266', u'Q1481766', u'Q30973', u'Q1481751']",male,Q81422,,,,,,,human,,,Japheth,https://www.wikidata.org/wiki/Q200637
+Q1147704,Biblical Elam,,,male,Q200902,,,,,,,biblical character,,,Biblical Elam,https://www.wikidata.org/wiki/Q1147704
+Q2426606,Ashur,,,male,Q200902,,,,,,,biblical character,,,Ashur,https://www.wikidata.org/wiki/Q2426606
+Q457520,Arpachshad,,Q1827950,male,Q200902,,,,,,,human,,,Arpachshad,https://www.wikidata.org/wiki/Q457520
+Q1815870,Lud,,,male,Q200902,,,,,,,biblical character,,,"Lud, son of Shem",https://www.wikidata.org/wiki/Q1815870
+Q625667,Aram,,"[u'Q2558734', u'Q2898616', u'Q2910407']",male,Q200902,,,,,,,biblical character,,,"Aram, son of Shem",https://www.wikidata.org/wiki/Q625667
+Q1138595,Cush,,,male,Q229702,,,,,,,biblical character,,,Cush (Bible),https://www.wikidata.org/wiki/Q1138595
+Q204797,Canaan,,,male,Q229702,,,,,,,biblical character,,,Canaan (son of Ham),https://www.wikidata.org/wiki/Q204797
+Q1369215,Mizraim,,,male,Q229702,,,,,,,biblical character,,,Mizraim,https://www.wikidata.org/wiki/Q1369215
+Q946939,Phut,,,male,Q229702,,,,,,,human,,,Phut,https://www.wikidata.org/wiki/Q946939
+Q1148172,Gomer,,"[u'Q2918052', u'Q1068499', u'Q722770']",male,Q200637,,,,,,,mythical character,,,Gomer,https://www.wikidata.org/wiki/Q1148172
+Q1964706,Magog,,,male,Q200637,,,,,,,mythical character,,,Magog (Bible),https://www.wikidata.org/wiki/Q1964706
+Q1790796,Madai,,,,Q200637,,,,,,,mythical character,,,Madai,https://www.wikidata.org/wiki/Q1790796
+Q1684266,Javan,,"[u'Q1330627', u'Q44826', u'Q1743921', u'Q2918046']",male,Q200637,,,,,,,mythical character,,,Javan,https://www.wikidata.org/wiki/Q1684266
+Q1481766,Tubal,,,male,Q200637,,,,,,,"[u'mythical character', u'human']",,,Tubal,https://www.wikidata.org/wiki/Q1481766
+Q30973,Meshech,,,,Q200637,,,,,,,mythical character,,,Meshech,https://www.wikidata.org/wiki/Q30973
+Q1481751,Tiras,,,,Q200637,,,,,,,mythical character,,,Tiras,https://www.wikidata.org/wiki/Q1481751
+Q1827950,Salah,,Q502282,male,Q457520,,,,,,,human,,,Salah (biblical figure),https://www.wikidata.org/wiki/Q1827950
+Q2558734,Uz,,,male,Q625667,,,,,,,biblical character,,,Uz (son of Aram),https://www.wikidata.org/wiki/Q2558734
+Q2898616,Hul,,,male,Q625667,,,,,,,biblical character,,,Hul,https://www.wikidata.org/wiki/Q2898616
+Q2910407,Gether,,,male,Q625667,,,,,,,biblical character,,,Gether,https://www.wikidata.org/wiki/Q2910407
+Q2918052,Riphath,,,male,Q1148172,,,,,,,"[u'mythical character', u'human']",,,Riphath,https://www.wikidata.org/wiki/Q2918052
+Q1068499,Togarmah,,,male,Q1148172,,,,,,,human,,,Togarmah,https://www.wikidata.org/wiki/Q1068499
+Q722770,Ashkenaz,,,,Q1148172,,,,,,,mythical character,,,Ashkenaz,https://www.wikidata.org/wiki/Q722770
+Q1330627,Elishah,,,,Q1684266,,,,,,,mythical character,,,Elishah,https://www.wikidata.org/wiki/Q1330627
+Q44826,Tarshish,,,,,,,,,,,fictional city,,,Tarshish,https://www.wikidata.org/wiki/Q44826
+Q1743921,Kittim,,,,Q1684266,,,,,,,mythical character,,,Kittim,https://www.wikidata.org/wiki/Q1743921
+Q2918046,Dodanim,,,,Q1684266,,,,,,,mythical character,,,Dodanim,https://www.wikidata.org/wiki/Q2918046
+Q502282,Eber,,"[u'Q1648259', u'Q1553059']",male,Q1827950,,,,,,,"[u'biblical character', u'human']",,,Eber,https://www.wikidata.org/wiki/Q502282
+Q1648259,Peleg,,Q2040793,male,Q502282,,,,,,,"[u'human', u'biblical character']",,,Peleg,https://www.wikidata.org/wiki/Q1648259
+Q1553059,Joktan,,"[u'Q2905798', u'Q7493584', u'Q2905463', u'Q5638029', u'Q7904500', u'Q14925390']",male,Q502282,,,,,,,"[u'human', u'biblical character']",,,Joktan,https://www.wikidata.org/wiki/Q1553059
+Q2040793,Reu,,Q1161313,male,Q1648259,,,,,,,"[u'human', u'biblical character']",,,Reu,https://www.wikidata.org/wiki/Q2040793
+Q2905798,Almodad,,,male,,,,,,,,human,,,Almodad,https://www.wikidata.org/wiki/Q2905798
+Q7493584,Sheleph,,,,,,,,,,,,,,Sheleph,https://www.wikidata.org/wiki/Q7493584
+Q2905463,Hazarmaveth,,,male,,,,,,,,human,,,Hazarmaveth,https://www.wikidata.org/wiki/Q2905463
+Q5638029,Hadoram,,,,,,,,,,,,,,Hadoram,https://www.wikidata.org/wiki/Q5638029
+Q7904500,Uzal,,,,,,,,,,,,,,Uzal,https://www.wikidata.org/wiki/Q7904500
+Q14925390,Abimael,,,,,,,,,,,biblical character,,,,https://www.wikidata.org/wiki/Q14925390
+Q1161313,Serug,,Q18698851,male,Q2040793,,,,,,,"[u'human', u'biblical character']",,,Serug,https://www.wikidata.org/wiki/Q1161313
+Q18698851,Nahor,,Q586541,male,Q1161313,,,,,,,"[u'biblical character', u'human']",,,,https://www.wikidata.org/wiki/Q18698851
+Q586541,Terah,,"[u'Q9181', u'Q1199156', u'Q6323112']",male,Q18698851,,,,,Haran,,human,,,Terah,https://www.wikidata.org/wiki/Q586541
+Q9181,Abraham,"[u'Q194808', u'Q214617']","[u'Q183403', u'Q671872']",male,,,,,,,,"[u'human', u'biblical character']",prophet,,Abraham,https://www.wikidata.org/wiki/Q9181
+Q1199156,Haran,,"[u'Q40574', u'Q1752707', u'Q1449132']",male,Q586541,,,,,,,biblical character,,,Haran,https://www.wikidata.org/wiki/Q1199156
+Q6323112,Nahor,,Q1579827,male,Q586541,,,,,,,human,,,,https://www.wikidata.org/wiki/Q6323112
+Q194808,Sarah,Q9181,"[u'Q671872', u'Q1642480']",female,,,,,,,,human,,,Sarah,https://www.wikidata.org/wiki/Q194808
+Q214617,Hagar,Q9181,Q183403,female,,,,,Egypt,Desert of Paran,,human,,,Hagar,https://www.wikidata.org/wiki/Q214617
+Q183403,Ishmael,,"[u'Q3773487', u'Q2669401', u'Q3320047', u'Q5313606', u'Q6398999']",male,Q9181,Q214617,,,,,,human,,,Ishmael,https://www.wikidata.org/wiki/Q183403
+Q671872,Isaac,,"[u'Q289957', u'Q220822']",male,Q9181,Q194808,,,,,,human,,,Isaac,https://www.wikidata.org/wiki/Q671872
+Q40574,Lot,Q2575060,Q1585141,male,Q1199156,,,,,,,biblical character,,,Lot (biblical person),https://www.wikidata.org/wiki/Q40574
+Q1752707,Milcah,,Q1579827,female,Q1199156,,,,,,,human,,,Milcah,https://www.wikidata.org/wiki/Q1752707
+Q1449132,Iscah,,,female,Q1199156,,,,,,,biblical character,,,Iscah,https://www.wikidata.org/wiki/Q1449132
+Q1579827,Bethuel,,"[u'Q840401', u'Q40520']",male,Q6323112,Q1752707,,,,,,biblical character,,,Bethuel,https://www.wikidata.org/wiki/Q1579827
+Q1642480,Islamic view of Isaac,,,male,Q1768161,Q194808,,,,,,human,preacher,,Isaac in Islam,https://www.wikidata.org/wiki/Q1642480
+Q3773487,Nebaioth,,,male,Q183403,,,,,,,human,,,Nebaioth,https://www.wikidata.org/wiki/Q3773487
+Q2669401,Mahalath,Q220822,,female,Q183403,,,,,,,human,,,Mahalath,https://www.wikidata.org/wiki/Q2669401
+Q3320047,Basemath,Q220822,,female,Q183403,,,,,,,biblical character,,,Basemath,https://www.wikidata.org/wiki/Q3320047
+Q5313606,Dumah,,,male,Q183403,,,,,,,human,,,Dumah (son of Ishmael),https://www.wikidata.org/wiki/Q5313606
+Q6398999,Mahalath,Q220822,,female,Q183403,,,,,,,human,,,Mahalath,https://www.wikidata.org/wiki/Q6398999
+Q289957,Jacob,"[u'Q128847', u'Q207389']","[u'Q625661', u'Q1773005', u'Q215512', u'Q282220', u'Q651256', u'Q614575', u'Q122035', u'Q145746', u'Q460763', u'Q1775026', u'Q1771963', u'Q851749', u'Q550869']",male,Q671872,Q40520,,,,,,biblical character,,,Jacob,https://www.wikidata.org/wiki/Q289957
+Q220822,Esau,"[u'Q3320047', u'Q2669401']",Q2899130,male,Q671872,Q40520,,,,,,human,,,Esau,https://www.wikidata.org/wiki/Q220822
+Q2575060,Lot's wife,Q40574,,female,,,,,,,,human,,,Lot's wife,https://www.wikidata.org/wiki/Q2575060
+Q1585141,Moab,,,male,Q40574,,,,,,,human,,,,https://www.wikidata.org/wiki/Q1585141
+Q840401,Laban,,"[u'Q128847', u'Q207389']",male,Q1579827,,,,,,,human,,,Laban (Bible),https://www.wikidata.org/wiki/Q840401
+Q40520,Rebecca,,"[u'Q289957', u'Q220822']",female,Q1579827,,,,,,,human,,,Rebecca,https://www.wikidata.org/wiki/Q40520
+Q1768161,Islamic views on Abraham,,"[u'Q470988', u'Q1642480']",male,,,,,Ur,Hebron,,human,,,Abraham in Islam,https://www.wikidata.org/wiki/Q1768161
+Q128847,Leah,Q289957,"[u'Q625661', u'Q1773005', u'Q215512', u'Q282220', u'Q651256', u'Q614575', u'Q122035']",female,Q840401,,,,,,,human,,,Leah,https://www.wikidata.org/wiki/Q128847
+Q207389,Rachel,Q289957,"[u'Q145746', u'Q460763']",female,Q840401,,,,,,,human,,,Rachel,https://www.wikidata.org/wiki/Q207389
+Q625661,Reuben,,,male,Q289957,Q128847,,,,,,biblical character,,,Reuben (Bible),https://www.wikidata.org/wiki/Q625661
+Q1773005,Simeon,,,male,Q289957,Q128847,,,,,,human,,,Simeon (Hebrew Bible),https://www.wikidata.org/wiki/Q1773005
+Q215512,Levi,,"[u'Q2915121', u'Q2914557', u'Q2670550', u'Q594805']",male,Q289957,Q128847,,,,,,human,,,Levi,https://www.wikidata.org/wiki/Q215512
+Q282220,Judah,,Q1814684,male,Q289957,Q128847,,,,,,human,,,Judah (biblical person),https://www.wikidata.org/wiki/Q282220
+Q651256,Issachar,,,male,Q289957,Q128847,,,,,,human,,,Issachar,https://www.wikidata.org/wiki/Q651256
+Q614575,Zebulun,,,male,Q289957,Q128847,,,,,,human,,,Zebulun,https://www.wikidata.org/wiki/Q614575
+Q122035,Dinah,,,female,Q289957,Q128847,,,,,,human,,,Dinah,https://www.wikidata.org/wiki/Q122035
+Q145746,Joseph,Q723681,"[u'Q1056931', u'Q203251']",male,Q289957,Q207389,,,,,,human,,,Joseph (patriarch),https://www.wikidata.org/wiki/Q145746
+Q460763,Benjamin,,,male,Q289957,Q207389,,,,,,human,,,Benjamin,https://www.wikidata.org/wiki/Q460763
+Q1775026,Asher,,Q2899037,male,Q289957,Q221826,,,,,,biblical character,,,Asher,https://www.wikidata.org/wiki/Q1775026
+Q1771963,Naphtali,,,male,Q289957,Q794991,,,,,,human,,,Naphtali,https://www.wikidata.org/wiki/Q1771963
+Q851749,Gad,,,male,Q289957,Q221826,,,,,,human,,,Gad (son of Jacob),https://www.wikidata.org/wiki/Q851749
+Q550869,Dan,,,male,Q289957,Q794991,,,,,,human,,,Dan (Bible),https://www.wikidata.org/wiki/Q550869
+Q2899130,Eliphaz,,Q372091,male,Q220822,,,,,,,human,,,Eliphaz,https://www.wikidata.org/wiki/Q2899130
+Q470988,Ismail in Islam,,,male,Q1768161,Q1711668,,,,Mecca,,human,preacher,,Ishmael in Islam,https://www.wikidata.org/wiki/Q470988
+Q2915121,Gershon,,Q3482128,male,Q215512,,,,,,,human,,,Gershon,https://www.wikidata.org/wiki/Q2915121
+Q2914557,Kohath,,Q477527,male,Q215512,,,,,,,human,,,Kohath,https://www.wikidata.org/wiki/Q2914557
+Q2670550,Merari,,,male,Q215512,,,,,,,human,,,Merari,https://www.wikidata.org/wiki/Q2670550
+Q594805,Jochebed,Q477527,"[u'Q9077', u'Q51676', u'Q1938388']",female,,,,,,,,human,,,Jochebed,https://www.wikidata.org/wiki/Q594805
+Q1814684,Perez,,Q4177234,male,Q282220,Q1030008,,,,,,human,,,Perez (son of Judah),https://www.wikidata.org/wiki/Q1814684
+Q723681,Asenath,Q145746,"[u'Q1056931', u'Q203251']",female,,,,,,,,human,,,Asenath,https://www.wikidata.org/wiki/Q723681
+Q1056931,Manasseh,,,male,Q145746,Q723681,,,,,,human,,,Manasseh (tribal patriarch),https://www.wikidata.org/wiki/Q1056931
+Q203251,Ephraim,,,male,Q145746,Q723681,,,,,,human,,,Ephraim,https://www.wikidata.org/wiki/Q203251
+Q2899037,Serah,,,female,Q1775026,,,,,,,human,,,Serah,https://www.wikidata.org/wiki/Q2899037
+Q221826,Zilpah,,"[u'Q851749', u'Q1775026']",female,,,,,,,,human,,,Zilpah,https://www.wikidata.org/wiki/Q221826
+Q794991,Bilhah,,"[u'Q550869', u'Q1771963']",female,,,,,,,,biblical character,,,Bilhah,https://www.wikidata.org/wiki/Q794991
+Q372091,Amalek,,,male,Q2899130,,,,,,,biblical character,,,Amalek,https://www.wikidata.org/wiki/Q372091
+Q1711668,Hagar in Islam,,Q470988,female,,,,,,,,human,,,Hagar in Islam,https://www.wikidata.org/wiki/Q1711668
+Q3482128,Shimei,,,male,Q2915121,,,,,,,human,,,Shimei,https://www.wikidata.org/wiki/Q3482128
+Q477527,Amram,Q594805,"[u'Q9077', u'Q51676', u'Q1938388']",male,Q2914557,,,,,,,fictional human,,,Amram,https://www.wikidata.org/wiki/Q477527
+Q9077,Moses,Q205523,Q1514983,male,Q477527,Q594805,,,,,,"[u'prophet', u'human']",author,,Moses,https://www.wikidata.org/wiki/Q9077
+Q51676,Aaron,Q2916801,"[u'Q159443', u'Q1675214', u'Q321166']",male,Q477527,Q594805,,,,,,human,,,Aaron,https://www.wikidata.org/wiki/Q51676
+Q1938388,Miriam,,,female,Q477527,Q594805,,,,,,human,,,Miriam,https://www.wikidata.org/wiki/Q1938388
+Q4177234,Hezron,,Q1824842,male,Q1814684,,,,,,,human,,,Hezron,https://www.wikidata.org/wiki/Q4177234
+Q1030008,Tamar,,Q1814684,female,,,,,,,,human,,,Tamar (Genesis),https://www.wikidata.org/wiki/Q1030008
+Q205523,Zipporah,Q9077,Q1514983,female,Q62788,,,,,,,human,,,Zipporah,https://www.wikidata.org/wiki/Q205523
+Q1514983,Gershom,,Q6394968,male,Q9077,Q205523,,,,,,human,,,Gershom,https://www.wikidata.org/wiki/Q1514983
+Q2916801,Elisheba,Q51676,,female,,,,,,,,human,,,Elisheba,https://www.wikidata.org/wiki/Q2916801
+Q159443,Eleazar,,Q128063,male,Q51676,,,,,,,human,High Priest of Israel,,Eleazar,https://www.wikidata.org/wiki/Q159443
+Q1675214,Ithamar,,,male,Q51676,,,,,,,biblical character,,,Ithamar,https://www.wikidata.org/wiki/Q1675214
+Q321166,Nadab and Abihu,,,male,,,,,,,,,,,Nadab and Abihu,https://www.wikidata.org/wiki/Q321166
+Q1824842,Ram,,Q2038223,male,Q4177234,,,,,,,human,,,Ram (biblical figure),https://www.wikidata.org/wiki/Q1824842
+Q62788,Jethro,,Q205523,male,,,,,,,,human,,,Jethro (Bible),https://www.wikidata.org/wiki/Q62788
+Q6394968,Shebuel,,,male,Q1514983,,,,,,,human,,,Shebuel,https://www.wikidata.org/wiki/Q6394968
+Q128063,Phinehas,,,male,Q159443,,,,,,,"[u'fictional character', u'human']",,,Phinehas,https://www.wikidata.org/wiki/Q128063
+Q2038223,Amminadab,,Q1784980,male,Q1824842,,,,,,,biblical character,,,Amminadab,https://www.wikidata.org/wiki/Q2038223
+Q1784980,Nahshon,,Q1771358,male,Q2038223,,,,,,,human,,,Nahshon,https://www.wikidata.org/wiki/Q1784980
+Q1771358,Salmon,Q1135632,Q212253,male,Q1784980,,,,,,,human,,,Salmon (biblical figure),https://www.wikidata.org/wiki/Q1771358
+Q1135632,Rahab,Q1771358,Q212253,female,,,,,,,,human,,,Rahab,https://www.wikidata.org/wiki/Q1135632
+Q212253,Boaz,Q1774982,Q1135791,male,Q1771358,Q1135632,,,,,,biblical character,,,Boaz,https://www.wikidata.org/wiki/Q212253
+Q1774982,Ruth,Q212253,Q1135791,female,,,,,,,,human,,,Ruth (biblical figure),https://www.wikidata.org/wiki/Q1774982
+Q1135791,Obed,,Q45090,male,Q212253,Q1774982,,,,,,human,,,Obed (biblical figure),https://www.wikidata.org/wiki/Q1135791
+Q45090,Jesse,,Q41370,male,Q1135791,,,,,,,human,,,Jesse,https://www.wikidata.org/wiki/Q45090
+Q41370,David,Q272277,Q37085,male,Q45090,,-1040,-970,Bethlehem,Jerusalem,"[u'king', u'king']","[u'human', u'prophet', u'biblical character']","[u'herder', u'sovereign', u'singer']",,David,https://www.wikidata.org/wiki/Q41370
+Q272277,Bathsheba,"[u'Q71267', u'Q41370']",Q37085,female,Q16322478,,,,,,,human,,,Bathsheba,https://www.wikidata.org/wiki/Q272277
+Q37085,Solomon,Q865263,"[u'Q211663', u'Q365687', u'Q3320047']",male,Q41370,Q272277,-1011,-931,Jerusalem,Jerusalem,king,"[u'human', u'biblical character']",,,Solomon,https://www.wikidata.org/wiki/Q37085
+Q71267,Uriah the Hittite,Q272277,,male,,,,,,,,human,,,Uriah the Hittite,https://www.wikidata.org/wiki/Q71267
+Q16322478,Eliam,,Q272277,male,,,,,,,,human,,,,https://www.wikidata.org/wiki/Q16322478
+Q865263,Naamah,Q37085,,female,,,,,,,,biblical character,,,Naamah (wife of Solomon),https://www.wikidata.org/wiki/Q865263
+Q211663,Rehoboam,,Q273517,male,Q37085,,-972,-914,Jerusalem,Jerusalem,,human,sovereign,,Rehoboam,https://www.wikidata.org/wiki/Q211663
+Q365687,Menelik I,,,male,Q37085,,,,,,,human,,,Menelik I,https://www.wikidata.org/wiki/Q365687
+Q273517,Abijah of Judah,,Q313415,male,Q211663,Q11765187,,-911,,,,human,"[u'king', u'sovereign']",,Abijah of Judah,https://www.wikidata.org/wiki/Q273517
+Q313415,Asa of Judah,,Q126689,male,Q273517,,,,,,,human,,,Asa of Judah,https://www.wikidata.org/wiki/Q313415
+Q11765187,,,Q273517,female,,,,,,,,biblical character,,,,https://www.wikidata.org/wiki/Q11765187
+Q126689,Jehoshaphat,,Q313215,male,Q313415,,-896,-849,,,,human,,,Jehoshaphat,https://www.wikidata.org/wiki/Q126689
+Q313215,Jehoram of Judah,,Q313214,male,Q126689,,,-842,,,,"[u'human', u'biblical character']",,,Jehoram of Judah,https://www.wikidata.org/wiki/Q313215
+Q313214,Ahaziah of Judah,,Q313229,male,Q313215,Q463934,,-842,,,,"[u'human', u'biblical character']",,,Ahaziah of Judah,https://www.wikidata.org/wiki/Q313214
+Q313229,Jehoash of Judah,,Q313237,male,Q313214,,,,,,,"[u'human', u'biblical character']",,,Jehoash of Judah,https://www.wikidata.org/wiki/Q313229
+Q463934,Athaliah,,Q313214,female,Q235901,Q721295,,,,,,human,,,Athaliah,https://www.wikidata.org/wiki/Q463934
+Q313237,Amaziah of Judah,,Q313216,male,Q313229,,-802,-776,,,,"[u'human', u'biblical character']",,,Amaziah of Judah,https://www.wikidata.org/wiki/Q313237
+Q235901,Ahab,Q721295,Q463934,male,Q313221,,,-852,,,,human,,,Ahab,https://www.wikidata.org/wiki/Q235901
+Q721295,Jezebel,Q235901,Q463934,female,,,,,,,,human,,,Jezebel,https://www.wikidata.org/wiki/Q721295
+Q313216,Uzziah,,Q109920,male,Q313237,,,,,,,"[u'human', u'biblical character']",,,Uzziah,https://www.wikidata.org/wiki/Q313216
+Q313221,Omri,,Q235901,male,,,,,,,,human,,,Omri,https://www.wikidata.org/wiki/Q313221
+Q109920,Jotham of Judah,,Q30914,male,Q313216,,,,,,,"[u'human', u'biblical character']",,,Jotham of Judah,https://www.wikidata.org/wiki/Q109920
+Q30914,Ahaz,,Q244912,male,Q109920,,-763,-727,,,,"[u'human', u'biblical character']",,,Ahaz,https://www.wikidata.org/wiki/Q30914
+Q244912,Hezekiah,,Q156328,male,Q30914,,,-697,,,,"[u'human', u'biblical character']",,,Hezekiah,https://www.wikidata.org/wiki/Q244912
+Q156328,Manasseh of Judah,,Q313423,male,Q244912,,,,,,,"[u'human', u'biblical character']",,,Manasseh of Judah,https://www.wikidata.org/wiki/Q156328
+Q313423,Amon of Judah,,Q313228,male,Q156328,,-660,-640,,,,"[u'human', u'biblical character']",,,Amon of Judah,https://www.wikidata.org/wiki/Q313423
+Q313228,Josiah,,"[u'Q319034', u'Q184273', u'Q336832']",male,Q313423,,-648,-609,,Jerusalem,,"[u'human', u'biblical character']",sovereign,,Josiah,https://www.wikidata.org/wiki/Q313228
+Q319034,Jehoiakim,,Q319049,male,Q313228,,-634,-598,,Jerusalem,,"[u'human', u'biblical character']",,,Jehoiakim,https://www.wikidata.org/wiki/Q319034
+Q184273,Zedekiah,,,male,Q313228,,-617,,,,,human,,,Zedekiah,https://www.wikidata.org/wiki/Q184273
+Q336832,Jehoahaz of Judah,,,male,Q313228,,,,,Egypt,,"[u'human', u'biblical character']",,,Jehoahaz of Judah,https://www.wikidata.org/wiki/Q336832
+Q319049,Jeconiah,,Q2256348,male,Q319034,,,,,Babylon,,human,,,Jeconiah,https://www.wikidata.org/wiki/Q319049
+Q2256348,Shealtiel,,Q320139,,Q319049,,,,,,,"[u'human', u'biblical character']",,,Shealtiel,https://www.wikidata.org/wiki/Q2256348
+Q320139,Zerubbabel,,Q321170,male,Q2256348,,,,,,,"[u'human', u'biblical character']",,,Zerubbabel,https://www.wikidata.org/wiki/Q320139
+Q321170,Abihud,,Q16937033,,Q320139,,,,,,,"[u'human', u'biblical character']",,,Abihud,https://www.wikidata.org/wiki/Q321170
+Q16937033,Eliakim,,Q18699264,male,Q321170,,,,,,,"[u'human', u'biblical character']",,,Eliakim (Bible),https://www.wikidata.org/wiki/Q16937033
+Q18699264,Azor,,Q18699268,male,Q16937033,,,,,,,"[u'human', u'biblical character']",,,,https://www.wikidata.org/wiki/Q18699264
+Q18699268,Zadok,,Q18699270,male,Q18699264,,,,,,,"[u'human', u'biblical character']",,,,https://www.wikidata.org/wiki/Q18699268
+Q18699270,Achim,,Q18699272,male,Q18699268,,,,,,,"[u'human', u'biblical character']",,,,https://www.wikidata.org/wiki/Q18699270
+Q18699272,Eliud,,Q18699300,male,Q18699270,,,,,,,"[u'human', u'biblical character']",,,,https://www.wikidata.org/wiki/Q18699272
+Q18699300,Eleazar,,Q18699310,male,Q18699272,,,,,,,"[u'human', u'biblical character']",,,,https://www.wikidata.org/wiki/Q18699300
+Q18699310,Matthan,,Q18699312,male,Q18699300,,,,,,,"[u'human', u'biblical character']",,,,https://www.wikidata.org/wiki/Q18699310
+Q18699312,Jacob,,Q128267,male,Q18699310,,,,,,,"[u'human', u'biblical character']",,,,https://www.wikidata.org/wiki/Q18699312
+Q128267,Saint Joseph,Q345,Q302,male,"[u'Q2474891', u'Q18699312']",,,,,,,human,"[u'carpenter', u'carpentry']",,Saint Joseph,https://www.wikidata.org/wiki/Q128267
+Q345,Mary,Q128267,Q302,female,Q314700,Q164294,-100,100,,[],,human,,,Mary (mother of Jesus),https://www.wikidata.org/wiki/Q345
+Q302,Jesus Christ,,,male,"[u'Q128267', u'Q186350']",Q345,"[-2L, -7L]","[30L, 33L]",Bethlehem,Calvary,,"[u'deity', u'biblical character', u'mythical character', u'human', u'Hypostasis']",[],,Jesus,https://www.wikidata.org/wiki/Q302
+Q2474891,Heli,,Q128267,male,,,,,,,,human,,,Heli (biblical figure),https://www.wikidata.org/wiki/Q2474891
+Q314700,Joachim,Q164294,Q345,male,,,-100,,Tzippori,Jerusalem,,human,,,Joachim,https://www.wikidata.org/wiki/Q314700
+Q164294,Saint Anna,Q314700,Q345,female,,Q831622,,100,"[u'Tzippori', u'Plon\xe9vez-Porzay']",,,human,,,Saint Anne,https://www.wikidata.org/wiki/Q164294
+Q186350,God the Father,,Q302,male,,,,,,,,,,,God the Father,https://www.wikidata.org/wiki/Q186350
+Q831622,Emerentia,,Q164294,female,,,,,,,,human,,,Emerentia,https://www.wikidata.org/wiki/Q831622
