@@ -70,7 +70,7 @@ Q9181,Abraham,male,"Ishmael, Isaac",Terah,,175,70,135,Gen 11:26; 25:7,"75 when l
 Q1199156,Haran,male,"Lot, Milcah, Iscah",Terah,,,,,Gen 11:26,
 Q6323112,Nahor,male,Bethuel,Terah,,,,,Gen 11:26,children missing (Gen 22:20-22)
 Q183403,Ishmael,male,"Nebaioth, Mahalath, Basemath, Dumah, Mahalath",Abraham,,137,86,,Gen 16:15f; 25:17,13 when circumcised (Gen 17:25); children missng (Gen 25:12ff)
-Q671872,Isaac,male,"Jacob, Esau",Abraham,,,,,,40 when marrying Rebecca (Gen 25:20)
+Q671872,Isaac,male,"Jacob, Esau",Abraham,,180,,,Gen 35:28; 21:3,40 when marrying Rebecca (Gen 25:20)
 Q40574,Lot,male,Moab,Haran,,,,,Gen 11:27,missing child: Ben-Ammi (Gen 19:38)
 Q1752707,Milcah,female,Bethuel,Haran,,,,,,
 Q1449132,Iscah,female,,Haran,,,,,,
@@ -81,36 +81,36 @@ Q3320047,Basemath,female,,Ishmael,,,,,,
 Q5313606,Dumah,male,,Ishmael,,,,,,
 Q6398999,Mahalath,female,,Ishmael,,,,,,
 Q214617,Hagar,female,Ishmael,,,,,,,
-Q289957,Jacob,male,"Reuben, Simeon, Levi, Judah, Issachar, Zebulun, Dinah, Joseph, Benjamin, Asher, Naphtali, Gad, Dan",Isaac,,,60,,"Gen 25:25, 26",
-Q220822,Esau,male,Eliphaz,Isaac,,,60,,Gen 25:26,
+Q289957,Jacob,male,"Reuben, Simeon, Levi, Judah, Issachar, Zebulun, Dinah, Joseph, Benjamin, Asher, Naphtali, Gad, Dan",Isaac,,147,60,,"Gen 25:25, 26; 46:28","130 in Gen 47:9 (Egypt), lived further 17 there (Gen 47:28)"
+Q220822,Esau,male,Eliphaz,Isaac,,,60,,Gen 25:26,"wife missing: Judith (Gen 26:34), Bashemath wrong? daughter of Elon the Hittite vs Ishmael? -> Gen 36:3; further wives+children missing: Gen 36:2-5"
 Q194808,Sarah,female,"Isaac, Islamic view of Isaac",,,127,,,Gen 23:1,father missing (Gen 20:12)
 Q1585141,Moab,male,,Lot,,,,,Gen 19:36-37,
 Q840401,Laban,male,"Leah, Rachel",Bethuel,,,,,,
 Q40520,Rebecca,female,"Jacob, Esau",Bethuel,,,,,Gen 12:23,
-Q625661,Reuben,male,,Jacob,,,,,,
-Q1773005,Simeon,male,,Jacob,,,,,,
-Q215512,Levi,male,"Gershon, Kohath, Merari, Jochebed",Jacob,,,,,,
-Q282220,Judah,male,Perez,Jacob,,,,,,
-Q651256,Issachar,male,,Jacob,,,,,,
-Q614575,Zebulun,male,,Jacob,,,,,,
-Q122035,Dinah,female,,Jacob,,,,,,
-Q145746,Joseph,male,"Manasseh, Ephraim",Jacob,,,,,,
-Q460763,Benjamin,male,,Jacob,,,,,,
-Q1775026,Asher,male,Serah,Jacob,,,,,,
-Q1771963,Naphtali,male,,Jacob,,,,,,
-Q851749,Gad,male,,Jacob,,,,,,
-Q550869,Dan,male,,Jacob,,,,,,
+Q625661,Reuben,male,,Jacob,,,,,Gen 29:32,sons: Gen 46:9
+Q1773005,Simeon,male,,Jacob,,,,,Gen 29:33,sons: Gen 46:10
+Q215512,Levi,male,"Gershon, Kohath, Merari, Jochebed",Jacob,,,,,Gen 29:34,sons: Gen 46:11
+Q282220,Judah,male,Perez,Jacob,,,,,Gen 29:35,"wife+children missing: Gen 38:1ff, Gen 46:12"
+Q651256,Issachar,male,,Jacob,,,,,Gen 30:18,sons: Gen 46:13
+Q614575,Zebulun,male,,Jacob,,,,,Gen 30:20,sons: Gen 46:14
+Q122035,Dinah,female,,Jacob,,,,,Gen 30:21,
+Q145746,Joseph,male,"Manasseh, Ephraim",Jacob,,110,,,"Gen 30:24; 50:22,26",17 in Gen 37:2 (when sold into slavery)
+Q460763,Benjamin,male,,Jacob,,,,,Gen 46:19; 35:18,sons: Gen 46:21
+Q1775026,Asher,male,Serah,Jacob,,,,,Gen 30:13,sons: Gen 46:17
+Q1771963,Naphtali,male,,Jacob,,,,,Gen 30:8,sons: Gen 46:24
+Q851749,Gad,male,,Jacob,,,,,Gen 30:11,sons: Gen 46:16
+Q550869,Dan,male,,Jacob,,,,,Gen 30:6,sons: Gen 46:23
 Q2899130,Eliphaz,male,Amalek,Esau,,,,,,
 Q1642480,Islamic view of Isaac,male,,Islamic views on Abraham,,,,,,
-Q128847,Leah,female,"Reuben, Simeon, Levi, Judah, Issachar, Zebulun, Dinah",Laban,,,,,,
-Q207389,Rachel,female,"Joseph, Benjamin",Laban,,,,,,
+Q128847,Leah,female,"Reuben, Simeon, Levi, Judah, Issachar, Zebulun, Dinah",Laban,,,,,Gen 29:16,
+Q207389,Rachel,female,"Joseph, Benjamin",Laban,,,,,Gen 29:16,
 Q2915121,Gershon,male,Shimei,Levi,,,,,,
 Q2914557,Kohath,male,Amram,Levi,,,,,,
 Q2670550,Merari,male,,Levi,,,,,,
 Q594805,Jochebed,female,"Moses, Aaron, Miriam",,,,,,,
 Q1814684,Perez,male,Hezron,Judah,,,,,,
-Q1056931,Manasseh,male,,Joseph,,,,,,
-Q203251,Ephraim,male,,Joseph,,,,,,
+Q1056931,Manasseh,male,,Joseph,,,Gen 46:20,,,
+Q203251,Ephraim,male,,Joseph,,,Gen 46:20,,,
 Q2899037,Serah,female,,Asher,,,,,,
 Q221826,Zilpah,female,"Gad, Asher",,,,,,,
 Q794991,Bilhah,female,"Dan, Naphtali",,,,,,,
@@ -118,9 +118,10 @@ Q372091,Amalek,male,,Eliphaz,,,,,,
 Q1768161,Islamic views on Abraham,male,"Ismail in Islam, Islamic view of Isaac",,,,,,,
 Q3482128,Shimei,male,,Gershon,,,,,,
 Q477527,Amram,male,"Moses, Aaron, Miriam",Kohath,,,,,,
-Q9077,Moses,male,Gershom,Amram,,,,,,
+Q9077,Moses,male,Gershom,Amram,,120,,,Gen 34:7,
 Q51676,Aaron,male,"Eleazar, Ithamar, Nadab and Abihu",Amram,,,,,,
 Q1938388,Miriam,female,,Amram,,,,,,
+Q7734,Joshua ,male,,,,110,,,Jos 24:29,
 Q4177234,Hezron,male,Ram,Perez,,,,,,
 Q1030008,Tamar,female,Perez,,,,,,,
 Q723681,Asenath,female,"Manasseh, Ephraim",,,,,,,
