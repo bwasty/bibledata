@@ -15,6 +15,7 @@ pd.set_option('display.max_colwidth', 60)
 LANG = 'en'
 # LANG = 'de'
 
+WIKIS = 'en', 'de'
 
 class Timer:
     def __init__(self):
@@ -37,7 +38,6 @@ def progress(indicator='.'):
 # property identifiers
 PropertyInfo = namedtuple('PropertyInfo', 'id is_person')
 
-# Properties = {
 Properties = OrderedDict()
 Properties['spouse'] = PropertyInfo('P26', True)
 Properties['child'] = PropertyInfo('P40', True)
@@ -49,18 +49,28 @@ Properties['died'] = PropertyInfo('P570', False)
 Properties['birth_place'] = PropertyInfo('P19', False)
 Properties['place_of_death'] = PropertyInfo('P20', False)
 Properties['position_held'] = PropertyInfo('P39', False)
-# Properties['present_in_work'] = PropertyInfo('P1441', False)
+Properties['present_in_work'] = PropertyInfo('P1441', False)
 Properties['instance_of'] = PropertyInfo('P31', False)
 Properties['occupation'] = PropertyInfo('P106', False)
-# Properties['brother'] = PropertyInfo('P7', True)
-# Properties['sister'] = PropertyInfo('P9', True)
-# }
-
-
-# TODO: potentially interesting properties: occupation (Abraham: prophet - can be several...),
-# instance of (moses: prophet),
-# said to be the same as (Enoch: Metatron)
-# part of (if no direct wiki entry -> Cain and Abel...)
+Properties['brother'] = PropertyInfo('P7', True)
+Properties['sister'] = PropertyInfo('P9', True)
+Properties['part of'] = PropertyInfo('P361', False)
+Properties['said to be the same as'] = PropertyInfo('P460', True)
+Properties['killed by'] = PropertyInfo('P157', True)
+Properties['given name'] = PropertyInfo('P735', False)
+Properties['noble family'] = PropertyInfo('P53', False)
+Properties['field of work'] = PropertyInfo('P101', False)
+Properties['member of'] = PropertyInfo('P463', False)
+Properties['religion'] = PropertyInfo('P140', False)
+Properties['location of burial'] = PropertyInfo('P119', False)
+Properties['cause of death'] = PropertyInfo('P509', False)
+Properties['manner of death'] = PropertyInfo('P1196', False)
+Properties['feast day'] = PropertyInfo('P841', False)
+Properties['residence'] = PropertyInfo('P551', False)
+Properties['country of citizenship'] = PropertyInfo('P27', False)
+Properties['ethnic group'] = PropertyInfo('P1074', False)
+Properties['native language'] = PropertyInfo('P103', False)
+Properties['canonization status'] = PropertyInfo('P411', False)
 
 PROPERTY_CACHE = {}
 
@@ -75,9 +85,13 @@ def import_data(df, person):
 
     row = pd.Series({
         'name': person.labels.get(LANG),
-        LANG + 'wiki': person.sitelinks.get(LANG + 'wiki'),
-        # 'description': person.descriptions.get(LANG)
+        'description': person.descriptions.get(LANG)
     })
+
+    # TODO!: load aliases
+
+    for wikilang in WIKIS:
+        row[wikilang + 'wiki'] = person.sitelinks.get(wikilang + 'wiki')
 
     for name, propinfo in Properties.iteritems():
         if propinfo.id not in person.claims:
@@ -90,6 +104,7 @@ def import_data(df, person):
                 row[name].append(value.target.id)
                 referenced_persons.append(value.target)
             else:
+                # TODO!!: create pairs (id, label/value, reference?) instead
                 target = value.target
                 if not target:
                     continue
@@ -108,8 +123,6 @@ def import_data(df, person):
 
         if len(row[name]) == 1:
             row[name] = row[name][0]
-
-    row['url'] = "https://www.wikidata.org/wiki/" + person.id
 
     df.loc[person.id] = row
 
@@ -147,7 +160,7 @@ def loadFromWikidata(root_id, max_relatives):
     root_person.get()
     progress('|')
 
-    columns = ['name'] + Properties.keys() + ['description', LANG + 'wiki', 'url']
+    columns = ['name', 'aliases'] + Properties.keys() + ['description'] + [wikilang + 'wiki' for wikilang in WIKIS]
     df = pd.DataFrame(columns=columns)
     df.index.name = "id"
 
@@ -174,6 +187,9 @@ def main():
     DAVID = "Q41370"
     JESUS = "Q302"
 
+    # TODO!: how get non-connected people like John the baptist, Apostles? Query by claim possible here?
+    # Likely only choice: https://wdq.wmflabs.org/wdq/
+
     ROOT = ADAM
 
     if not ALWAYS_LIVE and os.path.exists(CSV_NAME):
@@ -183,11 +199,11 @@ def main():
         df = loadFromWikidata(ROOT, MAX_RELATIVES)
         print
         timer.step('load from wikidata')
-        df.to_csv('bible-genealogy.csv')
+        df.to_csv('bible-genealogy.csv', encoding='utf-8')
 
-    print
-    pretty_df = replace_name_references(df)
-    print pretty_df
+    # print
+    # pretty_df = replace_name_references(df)
+    # print pretty_df
     # pretty_df_reduced = pretty_df[['name', 'gender', 'child', 'father']]
     # pretty_df_reduced['age'] = np.nan
     # pretty_df_reduced['fathers_age'] = np.nan
