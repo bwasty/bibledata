@@ -17,6 +17,7 @@ LANG = 'en'
 
 WIKIS = 'en', 'de'
 
+
 class Timer:
     def __init__(self):
         self.started = time()
@@ -51,28 +52,77 @@ Properties['place_of_death'] = PropertyInfo('P20', False)
 Properties['position_held'] = PropertyInfo('P39', False)
 Properties['present_in_work'] = PropertyInfo('P1441', False)
 Properties['instance_of'] = PropertyInfo('P31', False)
-Properties['occupation'] = PropertyInfo('P106', False)
-Properties['brother'] = PropertyInfo('P7', True)
-Properties['sister'] = PropertyInfo('P9', True)
-Properties['part of'] = PropertyInfo('P361', False)
-Properties['said to be the same as'] = PropertyInfo('P460', True)
-Properties['killed by'] = PropertyInfo('P157', True)
-Properties['given name'] = PropertyInfo('P735', False)
-Properties['noble family'] = PropertyInfo('P53', False)
-Properties['field of work'] = PropertyInfo('P101', False)
-Properties['member of'] = PropertyInfo('P463', False)
-Properties['religion'] = PropertyInfo('P140', False)
-Properties['location of burial'] = PropertyInfo('P119', False)
-Properties['cause of death'] = PropertyInfo('P509', False)
-Properties['manner of death'] = PropertyInfo('P1196', False)
-Properties['feast day'] = PropertyInfo('P841', False)
-Properties['residence'] = PropertyInfo('P551', False)
-Properties['country of citizenship'] = PropertyInfo('P27', False)
-Properties['ethnic group'] = PropertyInfo('P1074', False)
-Properties['native language'] = PropertyInfo('P103', False)
-Properties['canonization status'] = PropertyInfo('P411', False)
+
+# Properties['occupation'] = PropertyInfo('P106', False)
+# Properties['brother'] = PropertyInfo('P7', True)
+# Properties['sister'] = PropertyInfo('P9', True)
+# Properties['part of'] = PropertyInfo('P361', False)
+# Properties['said to be the same as'] = PropertyInfo('P460', True)
+# Properties['killed by'] = PropertyInfo('P157', True)
+# Properties['given name'] = PropertyInfo('P735', False)
+# Properties['noble family'] = PropertyInfo('P53', False)
+# Properties['field of work'] = PropertyInfo('P101', False)
+# Properties['member of'] = PropertyInfo('P463', False)
+# Properties['religion'] = PropertyInfo('P140', False)
+# Properties['location of burial'] = PropertyInfo('P119', False)
+# Properties['cause of death'] = PropertyInfo('P509', False)
+# Properties['manner of death'] = PropertyInfo('P1196', False)
+# Properties['feast day'] = PropertyInfo('P841', False)
+# Properties['residence'] = PropertyInfo('P551', False)
+# Properties['country of citizenship'] = PropertyInfo('P27', False)
+# Properties['ethnic group'] = PropertyInfo('P1074', False)
+# Properties['native language'] = PropertyInfo('P103', False)
+# Properties['canonization status'] = PropertyInfo('P411', False)
 
 PROPERTY_CACHE = {}
+
+
+# class Claim(object):
+#     def __init__(self, id, label, source):
+#         self.id = id
+#         self.label = label
+#         self.source = source
+#
+#     def __unicode__(self):
+#         return self.label
+#
+#     def __str__(self):
+#         return self.label
+
+
+def get_property(claim_target):
+    if claim_target.id in PROPERTY_CACHE:
+        return PROPERTY_CACHE[claim_target.id]
+
+    claim_target.get()
+    progress(',')
+    value = claim_target.labels.get(LANG)
+    PROPERTY_CACHE[claim_target.id] = value
+    return value
+
+
+def abbreviate_book(book):
+    return book[:3]
+
+
+def parse_bible_source(source):
+    try:
+        book = source['P248'][0].target
+        book_name = get_property(book)  # book.labels.get(LANG)
+        chapter = source['P792'][0].target
+        verse = source['P958'][0].target
+    except KeyError:
+        return None
+    return "{} {}:{}".format(abbreviate_book(book_name), chapter, verse)
+
+
+def parse_claim(claim):
+    claim.get()
+    parsed = {'id': claim.id,
+              'label': claim.labels.get(LANG),
+              'sources': [source.id for source in claim.sources]}
+
+
 
 
 def import_data(df, person):
@@ -88,7 +138,8 @@ def import_data(df, person):
         'description': person.descriptions.get(LANG)
     })
 
-    # TODO!: load aliases
+    if LANG in person.aliases:
+        row['aliases'] = person.aliases[LANG]
 
     for wikilang in WIKIS:
         row[wikilang + 'wiki'] = person.sitelinks.get(wikilang + 'wiki')
@@ -97,29 +148,36 @@ def import_data(df, person):
         if propinfo.id not in person.claims:
             continue
 
-        for value in person.claims[propinfo.id]:
+        for claim in person.claims[propinfo.id]:
             if name not in row:
                 row[name] = []
             if propinfo.is_person:
-                row[name].append(value.target.id)
-                referenced_persons.append(value.target)
+                entry = [claim.target.id]
+                # row[name].append(claim.target.id)
+                referenced_persons.append(claim.target)
+                for source in claim.sources:
+                    entry.append(parse_bible_source(source))
+
+                row[name].append(entry)
             else:
                 # TODO!!: create pairs (id, label/value, reference?) instead
-                target = value.target
+                target = claim.target
                 if not target:
                     continue
                 if isinstance(target, pywikibot.WbTime):
                     row[name].append(target.year)
                 else:
-                    if target.id in PROPERTY_CACHE:
-                        row[name].append(PROPERTY_CACHE[target.id])
-                        progress(',')
-                    else:
-                        target.get()
-                        progress()
-                        value = target.labels.get(LANG)
-                        row[name].append(value)
-                        PROPERTY_CACHE[target.id] = value
+                    row[name].append(get_property(target))
+                    # if target.id in PROPERTY_CACHE:
+                    #     row[name].append(PROPERTY_CACHE[target.id])
+                    #     progress(',')
+                    # else:
+                    #     target.get()
+                    #     progress()
+                    #     value = target.labels.get(LANG)
+                    #     # claim = Claim(target.id, target.labels.get(LANG), value.sources)
+                    #     row[name].append(value)
+                    #     PROPERTY_CACHE[target.id] = value
 
         if len(row[name]) == 1:
             row[name] = row[name][0]
@@ -177,7 +235,7 @@ def loadFromWikidata(root_id, max_relatives):
 
 
 def main():
-    MAX_RELATIVES = 250
+    MAX_RELATIVES = 50
     CSV_NAME = 'bible-genealogy.csv'
     ALWAYS_LIVE = False
     ALWAYS_LIVE = True
