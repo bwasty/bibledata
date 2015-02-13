@@ -1,5 +1,6 @@
 Bibledata
 =========
+[![Code Issues](http://www.quantifiedcode.com/project/4c55c9a9e2fd4d5da8297fd95f58e48e/badge.svg)](http://www.quantifiedcode.com/app#/project/4c55c9a9e2fd4d5da8297fd95f58e48e)
 
 The python scripts require [pywikibot](https://www.mediawiki.org/wiki/Manual:Pywikibot) to be installed, configured and available in `PYTHONPATH`. Also required: pandas, numpy.
 
