@@ -3,6 +3,7 @@ import pandas as pd
 from flask import Flask
 app = Flask(__name__)
 
+
 @app.route("/")
 def servetable():
     df = pd.DataFrame.from_csv('bible-genealogy.csv')

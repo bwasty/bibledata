@@ -7,7 +7,7 @@ from time import time
 
 import pywikibot
 import pandas as pd
-import numpy as np
+# import numpy as np
 
 pd.set_option('display.width', 400)
 pd.set_option('display.max_colwidth', 60)
@@ -121,8 +121,6 @@ def parse_claim(claim):
     parsed = {'id': claim.id,
               'label': claim.labels.get(LANG),
               'sources': [source.id for source in claim.sources]}
-
-
 
 
 def import_data(df, person):
